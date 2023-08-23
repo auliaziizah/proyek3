@@ -1,0 +1,90 @@
+.grid-container {
+  display: grid;
+  grid-auto-columns: auto;
+  gap: 3px;
+  background-color: #000000;
+  padding: 5px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.grid-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tulisanputih{
+    color: white;
+    font-size: 20px;
+}
+.row1{
+    grid-row: 1;
+    padding: 10px 0;
+}
+.row1.kuning {
+    background-color: rgb(255, 226, 98);
+}
+.row1.hitam {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: rgb(0, 0, 0);
+}
+.row2{
+    grid-row: 2;
+    padding: 10px 0;
+}
+.row2.hijau {
+    background-color: rgb(91, 252, 86);
+}
+.row2.coklat{
+    background-color: rgb(143, 57, 0);
+    grid-column: 2;
+}
+.row2.pink{
+    background-color: rgb(255, 187, 187);
+    grid-row: 2 / 4;
+    grid-column: 3;
+}
+.row2.biru{
+    background-color: rgb(94, 199, 255);
+    grid-column: 4;
+}
+.row3{
+    grid-row: 3;
+    padding: 10px 0;
+}
+.row3.merah {
+    background-color: rgb(255, 0, 0);
+}
+.row3.putih{
+    background-color: rgb(255, 255, 255);
+    grid-column: 2;
+}
+.row3.ungu{
+    background-color: rgb(130, 47, 197);
+    grid-row: 3 / span 4;
+    grid-column: 4;
+}
+.row4{
+    grid-row: 4;
+    padding: 10px 0;
+}
+.row4.birutua{
+    background-color: rgb(47, 115, 197);
+    grid-row: 4 / span 3;
+    grid-column: 1;
+}
+.row4.abu{
+    background-color: rgb(194, 194, 194);
+    grid-row: 4 / span 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.row6{
+    grid-row: 6;
+}
+.row6.orange{
+    background-color: rgb(255, 162, 86);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
