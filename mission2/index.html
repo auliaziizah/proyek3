@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Form</title>
+   <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>iCashier</h1>
+        <div class="row">
+            <div id ="menu"class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <div id="daftar">
+                    <h4>My Cart</h4>
+                    <ul id="selected-list"></ul>
+                    <div class="totalharga">
+                        <p class="totalPembelian">
+                            <span class="totalPembelian-label">Total Pembelian:</span>
+                            <span class="currency-label">Rp</span>
+                            <span class="totalPembelian-value" id="totalPembelian">0</span>
+                        </p>
+                        <p class="pajak">
+                            <span class="pajak-label">Pajak 11%:</span>
+                            <span class="currency-label">Rp</span>
+                            <span class="pajak-value" id="pajak">0</span>
+                        </p>
+                        <p class="total">
+                            <span class="total-label">Total:</span>
+                            <span class="currency-label">Rp</span>
+                            <span class="total-value" id="total">0</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
